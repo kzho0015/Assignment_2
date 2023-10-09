@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans&display=swap" rel="stylesheet"> <!-- https://fonts.google.com/specimen/Kumbh+Sans -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/tooplate-vertex.css">
+    <script src="https://cdn.jsdelivr.net/npm/vega@5.20.2/build/vega.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vega-lite@5.1.1/build/vega-lite.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vega-embed@6.18.2/build/vega-embed.min.js"></script>
+    <script src="js/world_happiness.js"></script>
+    <!--
+Tooplate 2124 Vertex
+https://www.tooplate.com/view/2124-vertex
+-->
+
+</head>
+<body>
+    <main>
+        <div id="intro" class="tm-section">
+            <div class="tm-section-col tm-parallax" data-parallax="scroll" data-image-src="img/happy_crop.jpg"></div>
+            <div class="tm-section-col tm-content">
+                <div class="tm-media">
+                    <div class="tm-media-body tm-text-center">
+                        <h1>World Happiness 2023</h1>
+                        <hr class="tm-hr tm-mb-50">   
+                        <br>
+                        <h2 class="tm-text-primary">happiness</h2>
+                        <p class="tm-mb-20 tm-text-small">
+                            noun (n.)
+                        </p>
+                        <p class="tm-mb-20">
+                            a positive state of emotional well-being that a person experiences
+                        </p>
+                        <span class="tm-text-secondary tm-media-span tm-text-small">
+                        <br>
+                        <hr class="tm-hr tm-mb-50"> 
+                    </div>
+                </div>
+    
+                <div class="tm-media">
+                    <div class="tm-media-body">
+                        <p class="tm-text-primary">A natural way to measure people’s well-being 
+                            is to ask them how satisfied they are with their lives. 
+                            A typical question is, “Overall, how satisfied are you with your life these days?”
+                            People reply on a scale of 0-10 (0= completely dissatisfied, 10= completely satisfied).
+                            This allows people to evaluate their own happiness without making any assumptions
+                            about what causes it. Thus ‘life satisfaction’ is a standard measure of well-being.
+                        </p>
+                    </div>
+                </div>  
+
+            </div>
+        </div> 
+
+        <h2 class="white_containter">World View of Happiness Index</h2> 
+
+        <div id="map" class="tm-section-white">
+            <div class="tm-content-white world_map_design">
+                <h2 class="tm-text-primary tm-text-map ">World View of Happiness Index</h2> 
+                <div id="world_map" > 
+                </div>
+            </div> 
+        </div>
+
+        <h2 class="tm-text-primary tm-text-map ">Factors that Impact Societial Happiness</h2> 
+
+        <div id="about" class="tm-section-white">
+            
+            <div class="tm-section-col tm-content-small">
+                <div class="tm-media">
+                    <div class="tm-media-body">
+                        <p class="tm-text-primary"> 
+                            Income, health, having someone to count on, having a sense of freedom to make key life decisions,
+                             generosity, and the absence of corruption all play strong roles in supporting life evaluations.
+                        </p>
+                        <hr class="tm-hr tm-mb-50">   
+                    </div>
+                </div> 
+
+                <div class="tm-row">
+                    <div class="tm-col">
+                        <div class="tm-text-center tm-my-50">
+                            <i class="glyphicon glyphicon-cloud"></i>
+                        </div>                        
+                        <p>
+                            Gross Domestic Product, or how much each country produces, divided by the number of people in the country.
+                        </p>
+                    </div>
+                    <div class="tm-col">
+                        <div class="tm-text-center tm-my-50">
+                            <i class="glyphicon glyphicon-cloud"></i>
+                        </div>                        
+                        <p>
+                            Social support, or having someone to count on in times of trouble.
+                        </p>
+                    </div>
+                    
+                </div> 
+
+                <!-- different factors -->
+                <div class="tm-row">
+                    <div class="tm-col">
+                        <div class="tm-text-center tm-my-50">
+                            <i class="glyphicon glyphicon-cloud"></i>
+                        </div>                        
+                        <p>
+                            More than life expectancy, how is your physical and mental health?
+                        </p>
+                    </div>
+                    <div class="tm-col">
+                        <div class="tm-text-center tm-my-50">
+                            <i class="glyphicon glyphicon-cloud"></i>
+                        </div>                        
+                        <p>
+                            “Are you satisfied or dissatisfied with your freedom to choose what  you do with your life?” 
+                        </p>
+                    </div>
+                </div> 
+
+                <div class="tm-row">
+                    <div class="tm-col">
+                        <div class="tm-text-center tm-my-50">
+                            <i class="glyphicon glyphicon-cloud"></i>
+                        </div>                        
+                        <p>
+                            “Is corruption widespread throughout the government or not” and  “Is corruption widespread within businesses or not?”
+                        </p>
+                    </div>
+                    <div class="tm-col">
+                        <div class="tm-text-center tm-my-50">
+                            <i class="glyphicon glyphicon-cloud"></i>
+                        </div>                        
+                        <p>
+                            Dystopia is an imaginary country that has the world’s least-happy people. The purpose of establishing Dystopia is to have
+                             a benchmark against which all countries can be favorably compared in terms of each of the six key variables
+                        </p>
+                    </div>
+                </div> 
+            
+            </div>
+            
+            <div class="tm-section-col tm-content" id="box_plot"></div>
+
+        </div> 
+
+
+        <div class="tm-section-col tm-content" id="box_plot2"></div>
+        <div class="tm-section-col tm-content" id="stacked"></div>
+        <div class="tm-section-col tm-content" id="matrix"></div>
+
+    </main>
+
+    <script src="js/plugins.js"></script>
+    
+
+</body>
+</html>
