@@ -54,11 +54,18 @@ p {
 .tm-relative { position: relative; }
 .tm-text-map{ 
     color: #dadada; 
-    font-size: 24px; 
     margin-bottom: 50px; 
     text-align: center;
     font-size: 45px;
     font-family: "Didot", serif;
+}
+.tm-text-title{
+    color: #5a6650;
+    font-size: 40px;
+    text-align: center;
+    margin-bottom: 20px; 
+    font-family: "Didot", serif;
+    font-weight: bold;
 }
 
 .tm-hr {
@@ -96,7 +103,7 @@ p {
 }
 
 .tm-content {
-    padding: 70px 70px 70px 70px;
+    padding: 70px 70px 0px 70px;
     box-sizing: border-box;
 }
 
@@ -148,5 +155,6 @@ p {
 
 .white_containter{
     background-color: #dadada;
-    color: black;
+    box-sizing: border-box;
+    padding: 20px 70px 20px 70px;
 }
