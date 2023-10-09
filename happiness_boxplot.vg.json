@@ -2,7 +2,7 @@
     "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
     "data": {"url": "https://raw.githubusercontent.com/kzho0015/FIT3179/main/2023Happiness.csv"},
     "title": "Box Plot Overall Happiness Index",
-    "width": 600,
+    "width": 500,
     "height": 400,
     "transform": [
       {
