@@ -1,0 +1,23 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "data": {"url": "https://raw.githubusercontent.com/kzho0015/FIT3179/main/2023Happiness.csv"},
+    "title": "Box Plot Overall Happiness Index",
+    "width": 600,
+    "height": 400,
+    "mark": "boxplot",
+    "encoding": {
+      "x": {
+        "field": "Happiness_Index",
+        "type": "quantitative",
+        "scale": {"zero": false},
+        "title": "Happiness Index"
+      },
+      "y": {"field": "Region", "type": "nominal"},
+      "color": {
+          "type": "nominal",
+          "field": "Region",
+          "title": "Region",
+          "legend": null
+      }
+    }
+  }
