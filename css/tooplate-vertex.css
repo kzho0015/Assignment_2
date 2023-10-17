@@ -2,65 +2,69 @@
 Tooplate 2124 Vertex
 https://www.tooplate.com/view/2124-vertex
 */
+.main { box-sizing: border-box;  width:100%}
 
-* {  box-sizing: border-box; }
-html, body { overflow-x: hidden; }
+html, body { overflow-x: hidden;  margin: 0;}
 body { 
     font-family: 'Kumbh Sans', sans-serif;
     font-size: 18px;
-    background-color: #5a6650;
-    color: #dadada;
+    background-color: #fffffff1;
+    color: #374437;
     margin: 0;
 }
-/* 6d7565 */
-/* 5a6650 */
-/* 374639 */
-a { color: #fff; text-decoration: none; }
+
+a { color: #374437; text-decoration: none; }
 a:hover {  color: #9C9; }
 
 h1 {
-    line-height: 1.6;
-    margin-top: 0;
-    margin-bottom: 50px;
-    font-size: 70px;
+    margin: auto;
+    font-size: 65px;
     font-family: "Didot", serif;
-    color: #c4bebe;
+    padding: 0px 0px 30px 0px;
+    text-align: center;
+    line-height: 1.6;
+    color: #374437;
 }
 
 h2 {
     line-height: 1;
-    /* margin-top: 50px; */
-    margin-bottom: 0px;
 }
 
 p {
-    line-height: 1.2;
+    line-height: 1.4;
     margin-bottom: 50px;
+    font-size: 18px;
 }
 
-/* .p2 {
-    line-height: 1.2;
-    margin-bottom: 50px;
-    font 
-} */
+h3{
+    font-size: 18px;
+    padding-left: 60px;
+}
 
 .tm-text-small { font-size: 1em; }
+.tm-text-caption { 
+    font-size: 1em;
+    font-style: italic; }
 .tm-text-center { text-align: center; }
 .tm-text-right { text-align: right; }
-.tm-text-primary { color: #dadada; font-size: 24px; }
-.tm-text-secondary { color: #dadada; }
+.tm-text-primary { 
+    color: #374437; 
+    font-size: 20px; 
+    line-height: 1.4;
+}
+.tm-text-secondary { color: #374437; }
 .tm-text-link { color: #999; }
 .tm-text-link:hover { color: #99CC99; }
 .tm-relative { position: relative; }
 .tm-text-map{ 
-    color: #dadada; 
+    color: #e0e0e0; 
     margin-bottom: 50px; 
     text-align: center;
     font-size: 45px;
     font-family: "Didot", serif;
 }
 .tm-text-title{
-    color: #5a6650;
+    color: #374437;
     font-size: 40px;
     text-align: center;
     margin-bottom: 20px; 
@@ -69,9 +73,13 @@ p {
 }
 
 .tm-hr {
-    border-color: #dadada;
-    /* max-width: 340px; */
-    width: 35%;    
+    border-color: #e0e0e0;
+    width: 35%;
+}
+
+.tm-hr-title {
+    border-color: #e0e0e0;
+    width: 15%;   
 }
 
 .tm-mr {
@@ -85,7 +93,7 @@ p {
 }
 
 .tm-mb-20 { margin-bottom: 20px; }
-/* .tm-mb-50 { margin-bottom: 20px; } */
+.tm-my-50 { margin-bottom: 10px; }
 /* .tm-mb-80 { margin-bottom: 80px; } */
 /* .tm-mb-130 { margin-bottom: 130px; } */
 /* .tm-mb-200 { margin-bottom: 200px; } */
@@ -100,15 +108,11 @@ p {
 .tm-section-col {
     flex: 0 0 50%;
     width: 50%;
+    
 }
 
 .tm-content {
-    padding: 70px 70px 0px 70px;
-    box-sizing: border-box;
-}
-
-.tm-content-white {
-    padding: 20px 70px 20px 70px;
+    padding: 0px 70px 0px 70px;
     box-sizing: border-box;
 }
 
@@ -117,22 +121,20 @@ p {
 
 .tm-row {
     display: flex;
-    margin-left: -25px;
-    margin-left: -25px;
 }
 
 .tm-col {
     flex: 0 0 50%;
     width: 50%;
-    padding: 25px;
+    padding: 0px 50px 0px 0px;
     box-sizing: border-box;
 }
 
-/* Introduction */
 .tm-media {
     display: flex;
     align-items: flex-start;
-    margin-bottom: 50px;
+    margin-top: 30px;
+    /* margin-bottom: 20px; */
 }
 
 .tm-media img {
@@ -140,7 +142,7 @@ p {
     height: 200px;
 }
 
-.tm-media-body {  padding-left: 30px; }
+.tm-media-body {  padding-left: 20px; }
 
 .tm-media-span {
     margin-bottom: 15px;
@@ -149,12 +151,139 @@ p {
 }
 
 .world_map_design {
-    margin-left: auto;
-    margin-right: auto;
+    width: 100%;
+    height: 100%;
+    padding: 0px 0px 70px 0px;
+    box-sizing: border-box;
+    text-align: center;
+    color: #374437;
 }
 
-.white_containter{
-    background-color: #dadada;
+.boxplot_design {
+    width: 100%;
+    height: 100%;
+    padding: 0px 0px 0px 80px;
     box-sizing: border-box;
+}
+
+.tm-media-boxplot {
+    display: flex;
+    align-items: flex-start;
+}
+
+.white_container{
+    color: #e0e0e0;
+    background-color: #374437;
+    display:flex;
+}
+
+.column-2{
+    columns: 2;
+    column-gap: 5%;
+}
+
+.factor-spacing {
+    padding: 30px 0px 0px 0px;
+    box-sizing: border-box;
+}
+
+.parallel-spacing {
+    padding: 0px 20px 0px 90px;
+    box-sizing: border-box;
+}
+
+
+.border{
+    background-color: #e0e0e0;
+    text-align: center;
+    padding: 20px 10px 20px 10px
+}
+
+.collapsible {
     padding: 20px 70px 20px 70px;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    color: #e0e0e0;
+    font-size: 40px;
+    text-align: center;
+    font-family: "Didot", serif;
+    font-weight: bold;
+    background-color: #374437;
+  }
+  
+  .active, .collapsible:hover {
+    background-color: #e0e0e0;
+    color: #374437;
+  }
+
+  .content {
+    padding: 20px 70px 20px 70px;
+    transition: max-height 0.2s ease-out;
+    display: block;
+    overflow: hidden;
+  }
+
+  .region-styling{
+    text-align: center;
+  }
+
+  .graph {
+    padding: 20px 70px 20px 70px;
+    display: none;
+    overflow: hidden;
+  }
+
+  .collapsible:hover::after{
+    content: "\2212"; 
+    float: right;
+    color: #374437;
+    font-weight: 300;
+    font-weight: bolder; 
+  }
+
+.collapsible:after {
+    content: '\2212'; 
+    color: #e0e0e0;
+    float: right;
+    margin-left: 5px;
+    font-weight: bolder; 
+  }
+  
+  .active:after  {
+    content: "\002B"; 
+    color: #374437;
+    font-weight: bolder; 
+  }
+
+.active:hover::after{
+    content: "\002B"; 
+    color: #374437;
+    font-weight: 300;
+    font-weight: bolder; 
+  } 
+
+.btn-group button {
+    background-color: #858585; /* Green background */
+    border: 1px solid #e0e0e0; /* Green border */
+    color: white; /* White text */
+    font-size: 18px;
+    display: inline;
+    padding: 10px 5px 10px 5px; /* Some padding */
+    width: 15%;
+    cursor: pointer; /* Pointer/hand icon */    
+    text-align: center;
+  }
+  
+  /* Add a background color on hover */
+  .btn-group button:hover {
+    font-weight: bolder;
+    background-color: #374437;
+    color: #e0e0e0;
+  }
+
+  .btn-group button:focus{
+    font-weight: bolder;
+    background-color: #374437;
+    color: #e0e0e0;
 }

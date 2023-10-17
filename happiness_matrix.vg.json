@@ -19,7 +19,7 @@
           }
         }
       ],
-      "transform": [
+    "transform": [
         {"filter": "datum.Happiness_Index > index_threshold"}
       ],
     "repeat": {
