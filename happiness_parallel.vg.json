@@ -101,7 +101,7 @@
       }]
     }],
     "config": {
-      "axisX": {"domain": false, "labelAngle": 25, "ticks": false, "title": null, "titleFont":"Kumbh Sans", "titleFontSize": 12},
+      "axisX": {"domain": false, "labelAngle": -45, "ticks": false, "title": null, "titleFont":"Kumbh Sans", "titleFontSize": 12},
       "view": {"stroke": null},
       "style": {
         "label": {"baseline": "middle",
